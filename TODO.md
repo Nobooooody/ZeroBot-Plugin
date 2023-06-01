@@ -1,0 +1,22 @@
+A Group Management plugin
+# TODO
+- [ ] Antiflood
+- [ ] AntiRaid
+- [ ] ban/mute/kick
+- [ ] blocklists
+- [ ] CAPTCHA
+- [ ] Clean Service (The message people send when they join the group)
+- [ ] Disabling (This allows you to disable some commonly used commands, so no one can use them. It'll also allow you to autodelete them, stopping people from bluetexting.)
+- [ ] Federations
+- [ ] Filters (Filters are case insensitive; every time someone says your trigger words, Rose will reply something else! can be used to create your own commands, if desired.)
+- [ ] Formatting(Not available in QQ)
+- [ ] Greetings
+- [ ] Import/Export (admin/antiflood/blocklists/clean_service/disabled/federations/filters/greetings/locks/notes/pins/raids/reports/rules/translations/warns)
+- [ ] Locks (Auto withdraw some message in certain type)
+- [ ] Log Channels/Groups (Log channels can help you keep track of exactly what the other admins are doing. Bans, Mutes, warns, notes - everything can be moderated.)
+- [ ] Notes (Notes are great to save random tidbits of information; a phone number, a nice gif, a funny picture - anything!) 
+- [ ] Pin
+- [ ] Purges (Need to delete lots of messages? That's what purges are for!)
+- [ ] Reports (Presenting reports; if someone in your group thinks someone needs reporting, they now have an easy way to call all admins.)
+- [ ] Rules (Every chat works with different rules; this module will help make those rules clearer!)
+- [ ] Warnings (Keep your members in check with warnings; stop them getting out of control!)
