@@ -253,8 +253,8 @@ func card2msg(dynamicCard *bz.DynamicCard, card *bz.Card, cType int) (msg []mess
 }
 
 // dynamicDetail 用动态id查动态信息
-func dynamicDetail(dynamicIDStr string) (msg []message.MessageSegment, err error) {
-	dyc, err := bz.GetDynamicDetail(dynamicIDStr)
+func dynamicDetail(cookiecfg *bz.CookieConfig, dynamicIDStr string) (msg []message.MessageSegment, err error) {
+	dyc, err := bz.GetDynamicDetail(cookiecfg, dynamicIDStr)
 	if err != nil {
 		return
 	}
@@ -321,6 +321,6 @@ func videoCard2msg(card bz.Card) (msg []message.MessageSegment, err error) {
 	msg = append(msg, message.Image(card.Pic))
 	msg = append(msg, message.Text("\n点赞: ", bz.HumanNum(card.Stat.Like), " 投币: ", bz.HumanNum(card.Stat.Coin), "\n",
 		"收藏: ", bz.HumanNum(card.Stat.Favorite), " 分享: ", bz.HumanNum(card.Stat.Share), "\n",
-		bz.VURL, card.BvID))
+		bz.VURL, card.BvID, "\n\n"))
 	return
 }

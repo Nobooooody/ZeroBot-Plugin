@@ -31,8 +31,8 @@ var (
 	// 用户数据
 	cfg config
 	// 插件主体
-	engine = control.Register("guessmusic", &ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+	engine = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
+		DisableOnDefault: true,
 		Brief:            "猜歌插件",
 		Help: "------bot主人指令------\n" +
 			"- 设置猜歌歌库路径 [绝对路径]\n" +
