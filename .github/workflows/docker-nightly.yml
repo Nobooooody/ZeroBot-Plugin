@@ -1,0 +1,34 @@
+name: 最新版docker打包
+
+on: [push, pull_request]
+jobs:
+  docker-builder:
+    name: build docker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up nix
+        uses: cachix/install-nix-action@v27
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: |
+            extra-platforms = aarch64-linux riscv64-linux i686-linux aarch64-darwin x86_64-darwin
+            sandbox = true
+
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@master
+
+      - name: build docker
+        run: |
+          mkdir output/
+          nix build .#packages.aarch64-linux.docker_builder -o aarch64-linux.docker
+          cp $(readlink aarch64-linux.docker) ./output/aarch64-linux.docker.tar.gz
+          nix build .#packages.x86_64-linux.docker_builder -o x86_64-linux.docker
+          cp $(readlink x86_64-linux.docker) ./output/x86_64-linux.docker.tar.gz
+          nix build .#packages.i686-linux.docker_builder -o i686-linux.docker
+          cp $(readlink i686-linux.docker) ./output/i686-linux.docker.tar.gz
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        if: ${{ !github.head_ref }}
+        with:
+          path: output/
