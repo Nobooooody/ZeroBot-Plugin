@@ -26,7 +26,7 @@ import (
 var (
 	api *deepinfra.API
 	en  = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Extra:            control.ExtraFromString("aichat"),
 		Brief:            "OpenAI聊天",
 		Help: "- 设置AI聊天触发概率10\n" +

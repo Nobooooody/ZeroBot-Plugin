@@ -18,7 +18,7 @@ import (
 
 func init() {
 	eng := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "星际战甲",
 		Help: "- wf时间同步\n" +
 			"- [金星|地球|火卫二]平原时间\n" +

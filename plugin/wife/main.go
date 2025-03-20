@@ -17,7 +17,7 @@ import (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Help:             "- 抽老婆",
 		Brief:            "从老婆库抽每日老婆",
 		PublicDataFolder: "Wife",

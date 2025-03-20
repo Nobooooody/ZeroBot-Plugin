@@ -16,7 +16,7 @@ import (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "好友申请和群聊邀请事件处理",
 		Help: "- [开启|关闭]自动同意[申请|邀请|主人]\n" +
 			"- [同意|拒绝][申请|邀请][flag]\n" +

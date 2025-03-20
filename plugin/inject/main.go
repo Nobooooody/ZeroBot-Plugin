@@ -10,7 +10,7 @@ import (
 
 func init() {
 	en := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "注入指令",
 		Help:             "- run[CQ码]",
 	})
