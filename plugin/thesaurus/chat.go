@@ -22,7 +22,7 @@ import (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "词典匹配回复, 仅@触发",
 		Help:             "- 切换[kimo|傲娇|可爱]词库",
 		PublicDataFolder: "Chat",

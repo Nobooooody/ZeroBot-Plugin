@@ -22,7 +22,7 @@ import (
 var (
 	// en data [8 temp] [8 rate] LSB
 	en = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Extra:            control.ExtraFromString("aichat"),
 		Brief:            "OpenAI聊天",
 		Help: "- 设置AI聊天触发概率10\n" +
