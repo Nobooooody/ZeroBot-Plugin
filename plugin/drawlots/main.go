@@ -43,7 +43,7 @@ var (
 		return lotsList
 	}()
 	en = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "多功能抽签",
 		Help: "支持图包文件夹和gif抽签\n" +
 			"-------------\n" +

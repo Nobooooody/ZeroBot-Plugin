@@ -49,7 +49,7 @@ var (
 // 查成分的
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "b站查成分查弹幕",
 		Help: "- >vup info [xxx]\n" +
 			"- >user info [xxx]\n" +
