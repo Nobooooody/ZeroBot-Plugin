@@ -18,7 +18,7 @@ import (
 
 func init() { // 插件主体
 	control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "GitHub仓库搜索",
 		Help: "- >github [xxx]\n" +
 			"- >github -p [xxx]",

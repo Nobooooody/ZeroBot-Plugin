@@ -23,7 +23,7 @@ import (
 
 func init() {
 	control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "点歌",
 		Help: "- 点歌[xxx]\n" +
 			"- 网易点歌[xxx]\n" +

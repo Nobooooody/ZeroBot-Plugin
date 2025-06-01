@@ -22,7 +22,7 @@ const bed = "https://gitea.seku.su/fumiama/senso-ji-omikuji/raw/branch/main/"
 
 func init() { // 插件主体
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "浅草寺求签",
 		Help:             "- 求签 | 占卜\n- 解签",
 		PublicDataFolder: "Omikuji",
