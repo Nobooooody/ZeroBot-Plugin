@@ -64,7 +64,7 @@ func init() { // 插件主体
 		name = zero.BotConfig.NickName[0]
 	}()
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "文心AI画图",
 		Help: "基于百度文心的免费AI画图插件,\n因为是免费的,图片质量你懂的。\n" +
 			"key申请链接:https://wenxin.baidu.com/moduleApi/key\n" +
@@ -256,7 +256,7 @@ func init() { // 插件主体
 		})
 	/*********************************************************/
 	en := control.Register("wenxinmodel", &ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "文心AI文本处理",
 		Help: "基于百度文心AI的API文本处理\n" +
 			"key申请链接:https://wenxin.baidu.com/moduleApi/key\n" +

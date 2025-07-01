@@ -15,7 +15,7 @@ const api = "http://dwz.2xb.cn/zaob"
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault:  false,
+		DisableOnDefault: true,
 		Brief:             "今日早报",
 		Help:              "- 今日早报",
 		PrivateDataFolder: "dailynews",

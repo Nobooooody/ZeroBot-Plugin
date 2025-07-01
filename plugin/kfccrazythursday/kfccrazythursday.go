@@ -23,7 +23,7 @@ type crazyResponse struct {
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "疯狂星期四",
 		Help:             "疯狂星期四\n",
 	})
