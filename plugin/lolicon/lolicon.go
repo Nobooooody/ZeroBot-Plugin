@@ -32,7 +32,7 @@ var (
 
 func init() {
 	en := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "随机图片",
 		Help: "- 随机图片\n" +
 			"- 随机图片 萝莉|少女\n" +

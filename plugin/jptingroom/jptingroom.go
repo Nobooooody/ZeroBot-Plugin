@@ -17,7 +17,7 @@ import (
 
 func init() { // 插件主体
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "日语听力学习材料",
 		Help: "- 随机日语听力\n" +
 			"- 随机日语歌曲\n" +
