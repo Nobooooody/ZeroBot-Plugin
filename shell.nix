@@ -13,7 +13,7 @@
   mkGoEnv ? pkgs.mkGoEnv,
   gomod2nix ? pkgs.gomod2nix,
 }: let
-  goEnv = mkGoEnv { pwd = ./.; go = pkgs.go_1_20; };
+  goEnv = mkGoEnv {pwd = ./.;};
 in
   pkgs.mkShell {
     packages = [
