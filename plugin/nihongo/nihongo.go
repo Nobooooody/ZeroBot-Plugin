@@ -17,7 +17,7 @@ import (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "日语学习",
 		Help: "- 日语语法[xxx](使用tag随机)\n" +
 			"搜索日语语法[xxx]",

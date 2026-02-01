@@ -18,7 +18,7 @@ import (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "cp短打", // 这里也许有更好的名字
 		Help:             "- 组cp[@xxx][@xxx]\n- 磕cp大老师 雪乃",
 		PublicDataFolder: "CpStory",

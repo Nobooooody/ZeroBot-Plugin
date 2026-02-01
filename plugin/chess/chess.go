@@ -30,7 +30,7 @@ var (
 	limit       = ctxext.NewLimiterManager(time.Microsecond*2500, 1)
 	tempFileDir string
 	engine      = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault:  false,
+		DisableOnDefault: true,
 		Brief:             "国际象棋",
 		Help:              helpString,
 		PrivateDataFolder: "chess",

@@ -35,7 +35,7 @@ var (
 
 func init() { // 插件主体
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "以图搜图",
 		Help: "- 以图搜图 | 搜索图片 | 以图识图[图片]\n" +
 			"- 搜图[P站图片ID]",

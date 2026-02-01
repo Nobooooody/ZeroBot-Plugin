@@ -70,7 +70,7 @@ var (
 
 func init() { // 插件主体
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault:  false,
+		DisableOnDefault: true,
 		Brief:             "群管插件",
 		Help:              hint,
 		PrivateDataFolder: "manager",

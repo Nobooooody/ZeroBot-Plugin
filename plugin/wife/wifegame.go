@@ -20,7 +20,7 @@ import (
 var (
 	sizeList = []int{0, 3, 5, 8}
 	enguess  = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Help:             "- 猜老婆",
 		Brief:            "从老婆库猜老婆",
 	}).ApplySingle(ctxext.NewGroupSingle("已经有正在进行的游戏..."))

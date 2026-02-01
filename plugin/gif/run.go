@@ -127,7 +127,7 @@ func init() { // 插件主体
 		cmd = append(cmd, k)
 	}
 	en := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "制图",
 		Help: "下为制图命令:\n" +
 			"- 搓|- 冲|- 摸|-拍|- 丢|- 吃|- 敲|- 啃|- 蹭|- 爬|- 撕\n" +

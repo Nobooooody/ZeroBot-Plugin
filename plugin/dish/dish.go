@@ -30,7 +30,7 @@ var (
 
 func init() {
 	en := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "程序员做饭指南",
 		Help:             "-怎么做[xxx]|烹饪[xxx]|随机菜谱|随便做点菜",
 		PublicDataFolder: "Dish",

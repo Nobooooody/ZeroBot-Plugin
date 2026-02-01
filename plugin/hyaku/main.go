@@ -52,7 +52,7 @@ var lines [100]*line
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "百人一首",
 		Help: "- 百人一首(随机发一首)\n" +
 			"- 百人一首之n",

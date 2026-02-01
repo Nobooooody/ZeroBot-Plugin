@@ -15,7 +15,7 @@ import (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault:  false,
+		DisableOnDefault: true,
 		Brief:             "睡眠小助手",
 		Help:              "- 早安\n- 晚安",
 		PrivateDataFolder: "sleep",

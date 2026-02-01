@@ -19,7 +19,7 @@ var cardImgPathList []string
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "抽扑克牌",
 		Help:             "- 抽扑克\n- poker",
 		PublicDataFolder: "Poker",

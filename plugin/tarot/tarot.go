@@ -50,7 +50,7 @@ var (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "塔罗牌",
 		Help: "- 抽[塔罗牌|大阿卡纳|小阿卡纳]\n" +
 			"- 抽n张[塔罗牌|大阿卡纳|小阿卡纳]\n" +

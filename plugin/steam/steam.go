@@ -18,7 +18,7 @@ import (
 
 var (
 	engine = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Extra:            control.ExtraFromString("steam"),
 		Brief:            "steam相关插件",
 		Help: "- steam添加订阅 xxxxxxx (可输入需要绑定的 steamid)\n" +

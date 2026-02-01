@@ -25,7 +25,7 @@ import (
 var (
 	// en data [8 temp] [8 rate] LSB
 	en = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Extra:            control.ExtraFromString("aichat"),
 		Brief:            "大模型聊天和Agent",
 		Help:             "- (随意聊天, 概率匹配)",

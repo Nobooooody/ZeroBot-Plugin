@@ -18,7 +18,7 @@ const bed = "https://www.gstatic.com/android/keyboard/emojikitchen/%d/u%x/u%x_u%
 
 func init() {
 	control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "合成emoji",
 		Help:             "- [emoji][emoji]",
 	}).OnMessage(match).SetBlock(true).Limit(ctxext.LimitByUser).

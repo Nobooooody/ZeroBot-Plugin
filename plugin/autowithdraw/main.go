@@ -11,7 +11,7 @@ import (
 
 func init() {
 	control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "触发者撤回时也自动撤回",
 		Help:             "- 撤回一条消息\n",
 	}).OnNotice(func(ctx *zero.Ctx) bool {

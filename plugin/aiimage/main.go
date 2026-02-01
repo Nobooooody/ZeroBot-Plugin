@@ -24,7 +24,7 @@ func init() {
 	var sdb = &storage{}
 
 	en := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Extra:            control.ExtraFromString("aiimage"),
 		Brief:            "AI画图",
 		Help: "- 设置AI画图密钥xxx\n" +
