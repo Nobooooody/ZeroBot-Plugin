@@ -127,7 +127,7 @@ var (
 
 var (
 	engine = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "钓鱼",
 		Help: "一款钓鱼模拟器,规则:V" + version +
 			"\n----------指令----------\n" +

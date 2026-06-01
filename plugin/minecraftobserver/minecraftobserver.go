@@ -21,7 +21,7 @@ var (
 	// 注册插件
 	engine = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
 		// 默认不启动
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "Minecraft服务器状态查询/订阅",
 		// 详细帮助
 		Help: "- mc服务器状态 [服务器IP/URI]\n" +

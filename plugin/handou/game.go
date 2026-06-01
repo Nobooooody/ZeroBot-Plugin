@@ -64,7 +64,7 @@ var colors = [...]color.RGBA{
 
 var (
 	en = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "猜成语",
 		Help: "- 个人猜成语\n" +
 			"- 团队猜成语\n",

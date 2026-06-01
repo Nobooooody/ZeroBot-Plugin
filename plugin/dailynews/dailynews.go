@@ -13,7 +13,7 @@ const api = "https://uapis.cn/api/v1/daily/news-image"
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault:  false,
+		DisableOnDefault: true,
 		Brief:             "今日早报",
 		Help:              "- 今日早报",
 		PrivateDataFolder: "dailynews",

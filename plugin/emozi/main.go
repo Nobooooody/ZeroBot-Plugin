@@ -19,7 +19,7 @@ import (
 
 func init() {
 	en := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault:  false,
+		DisableOnDefault: true,
 		Brief:             "颜文字抽象转写",
 		Help:              "- 抽象转写[文段]\n- 抽象还原[文段]\n- 抽象登录[用户名]",
 		PrivateDataFolder: "emozi",

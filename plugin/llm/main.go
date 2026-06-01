@@ -23,7 +23,7 @@ import (
 var (
 	// en data [8 temp] [8 rate] LSB
 	en = control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "大模型聊天和群聊总结",
 		Help: "- 群聊总结 [消息数目]|群聊总结 1000\n" +
 			"- /gpt [内容] （使用大模型聊天）\n",

@@ -36,7 +36,7 @@ var (
 
 func init() {
 	engine := control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "聊天热词",
 		Help:             "- 热词 [消息数目]|热词 1000",
 		PublicDataFolder: "WordCount",

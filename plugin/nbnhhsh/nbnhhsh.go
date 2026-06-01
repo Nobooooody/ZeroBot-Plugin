@@ -16,7 +16,7 @@ import (
 
 func init() {
 	control.AutoRegister(&ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: false,
+		DisableOnDefault: true,
 		Brief:            "拼音首字母释义工具",
 		Help:             "- ?? [缩写]",
 	}).OnRegex(`^[?？]{1,2} ?([a-z0-9]+)$`).SetBlock(false).
