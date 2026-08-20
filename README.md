@@ -404,6 +404,23 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
+  <summary>asabaguess 浅羽猜歌</summary>
+
+  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/asabaguess"`
+
+  多人淘汰制多选猜歌: 报名后同台竞技, 每轮播放一首歌并给出多选题目(A/B/C 三档难度),
+  答错的玩家被淘汰, 依次通过各难度的题目后, 仍未淘汰的玩家获胜. 玩法参数均可通过群内指令动态配置.
+
+  - [x] 浅羽猜歌 / 浅羽报名 / 浅羽取消猜歌
+  - [x] 浅羽战绩 / 浅羽题库 / 浅羽配置
+  - [x] 浅羽设置 <键> <值> (签到处配置: 报名时长/作答时限/人数上下限/选项数/答题方式/难度轮数等)
+  - [x] 浅羽导入歌包 <文件|路径> / 浅羽导出歌包 (资源包 zip 格式, 内含 manifest.json 与 audios/)
+
+  > 歌曲资源包由 `misc/asabaguess/build_pack.py` 从原始素材生成 (详见 `misc/asabaguess/README.md`),
+  > 生成物不纳入 git 仓库, 导出后通过「浅羽导入歌包」导入即可.
+
+</details>
+<details>
   <summary>AIfalse</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/ai_false"`
